@@ -1,16 +1,40 @@
-# React + Vite
+Віртуальний автосалон
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Односторінковий застосунок-каталог автомобілів на React. Дані про транспортні засоби беруться з публічного DummyJSON API
 
-Currently, two official plugins are available:
+Живий застосунок: pozeratel.github.io/car-showroom/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Функціонал
+Каталог автомобілів — картки з фото, назвою, брендом, категорією, рейтингом, наявністю на складі та ціною.
+Пошук — фільтрація списку за назвою/описом автомобіля в реальному часі.
+Пагінація — розбиття результатів на сторінки (по 8 елементів на сторінці).
+Сторінка окремого автомобіля — детальна інформація про модель.
+Коментарі — можливість залишити коментар до автомобіля; коментарі зберігаються локально в браузері (localStorage) і не втрачаються при перезавантаженні сторінки.
 
-## React Compiler
+Технології:
+React (Vite)
+Fetch API для звернень до DummyJSON
+CSS-модулі / звичайний CSS для стилізації
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Локальний запуск
 
-## Expanding the ESLint configuration
+1. Клонуйте репозиторій:
+   bash
+   git clone [ВСТАВТЕ ПОСИЛАННЯ НА ВАШ РЕПОЗИТОРІЙ]
+   cd [НАЗВА ПАПКИ РЕПОЗИТОРІЮ]
+2. Встановіть залежності:
+   bash
+   npm install
+3. Запустіть застосунок у режимі розробки:
+   bash
+   npm run dev
+4. Відкрийте у браузері адресу, яку виведе термінал (за замовчуванням http://localhost:5173).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Збірка production-версії
+bash
+npm run build
+npm run preview
+
+Розгортання
+
+Застосунок розгорнуто на GitHub Pages і залишатиметься доступним щонайменше тиждень з моменту здачі роботи.
